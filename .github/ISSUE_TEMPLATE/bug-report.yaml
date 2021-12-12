@@ -55,9 +55,9 @@ body:
       label: Checklist
       description: Please make sure you've completed all the steps in the checklist
       options:
-      - label: I am not reporting a security vulnerability (A vulnerability that, were it to be exploited, would cause damage to confidentiality, integrity, or availability.)
+      - label: I am not reporting a [security vulnerability](https://github.com/PolyHosting/polyhost/security/policy)
         required: true
-      - label: I have read and agree to the [README](https://github.com/Minefly/minefly#readme)
+      - label: I have read and agree to the [README](https://github.com/PolyHosting/polyhost#readme)
         required: true
       - label: I have made sure this issue is not a duplicate
         required: true
