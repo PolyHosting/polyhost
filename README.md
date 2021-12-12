@@ -1,3 +1,7 @@
+![Open Issues](https://img.shields.io/github/issues-raw/PolyHosting/polyhost)
+![Closed Issues](https://img.shields.io/github/issues-closed-raw/PolyHosting/polyhost)
+![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/PolyHosting/polyhost)
+![Closed Pull Requests](https://img.shields.io/github/issues-pr-closed-raw/PolyHosting/polyhost)
 # PolyHost
 
 Here you can report bugs and suggest new features or changes to existing ones for PolyHost.
@@ -25,5 +29,5 @@ When using GitHub there are a few key terms that will be commonly used:
 
 
 - If you'd like to submit a bug report or feature request head over to **[this section](https://github.com/PolyHosting/polyhost/issues/new/choose)**
-- You can also check out preexisting issues and discuss them [here](https://github.com/Polyhosting/polyhost/issues).
+- You can also check out preexisting issues and discuss them [here](https://github.com/PolyHosting/polyhost/issues).
 
