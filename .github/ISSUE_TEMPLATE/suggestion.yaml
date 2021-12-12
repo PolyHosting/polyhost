@@ -2,6 +2,11 @@ name: Suggestion
 description: Suggest a new feature or a change to an existing one.
 labels: ["enhancement", "triage"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Guidelines
+        Please make sure that your suggestion isn't something already on PolyHost, and that it hasn't been suggested before.
   - type: textarea
     attributes:
       label: Platform
