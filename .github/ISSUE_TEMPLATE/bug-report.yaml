@@ -9,7 +9,7 @@ body:
       description: |
          - Where did this bug occur on?
          - Provide information about the device the bug happened on. (If this was a website bug report you should provide the browser used, its version and your screen size)
-      examples: |
+         examples:
           - **OS**: Windows 10
           - **Browser**: Firefox 95.0 (64-bit)
           - **Platform**: In-game
