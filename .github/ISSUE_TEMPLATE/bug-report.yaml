@@ -1,49 +1,39 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug] <title>"
+name: 🐞 Bug Report
+description: File a bug/issue
+title: ""
 labels: ["bug", "triage", "needs testing"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: checkboxes
-    attributes:
-      label: Have I read and agree to the README?
-      description: Please see if you have read and agree to the [README](https://github.com/Minefly/minefly#readme)
-      options:
-      - label: I have read and agree to the [README](https://github.com/Minefly/minefly#readme)
-        required: true
-  - type: checkboxes
-    attributes:
-      label: Am I not reporting a security vulnerability?
-      description: Make sure that you are not reporting a security vulnerability (A vulnerability that, were it to be exploited, would cause damage to confidentiality, integrity, or availability.)
-      options:
-      - label: I am not reporting a security vulnerability
-        required: true
-  - type: checkboxes
-    attributes:
-      label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
-      options:
-      - label: I have searched the existing issues
-        required: true
   - type: textarea
     attributes:
-      label: Current Behavior
-      description: A concise description of what you're experiencing.
+      label: Environment
+      description: |
+         - Where did this bug occur on?
+         - Provide information about the device the bug happened on. (If this was a website bug report you should provide the browser used, its version and your screen size)
+        examples:
+          - **OS**: Windows 10
+          - **Browser**: Firefox 95.0 (64-bit)
+          - **Platform**: In-game
+      value: |
+          - Platform: 
+      render: markdown
     validations:
       required: false
+  - type: textarea
+    attributes:
+      label: Bug Description
+      description: A concise description of what you're experiencing.
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Expected Behavior
-      description: A concise description of what you expected to happen.
+      description: What was supposed to happen? If you are not sure, please state so.
     validations:
-      required: false
+      required: true
   - type: textarea
     attributes:
       label: Steps To Reproduce
-      description: Steps to reproduce the behavior.
+      description: What did you do to make this problem happen? Try to be as thorough as possible.
       placeholder: |
         1. In this environment...
         2. With this config...
@@ -53,25 +43,37 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Environment
+      label: Extras
       description: |
-        examples:
-          - **OS**: Ubuntu 20.04
-          - **Node**: 13.14.0
-          - **npm**: 7.6.3
-      value: |
-          - OS:
-          - Node:
-          - npm:
-      render: markdown
-    validations:
-      required: false
-  - type: textarea
-    attributes:
-      label: Anything else?
-      description: |
-        Links? References? Anything that will give us more context about the issue you are encountering!
+        Do you have anything else to add?
 
         Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
     validations:
       required: false
+  - type: checkboxes
+    attributes:
+      label: Have I read and agree to the [README](https://github.com/Minefly/minefly#readme)?
+      options:
+      - label: I have read and agree to the [README](https://github.com/Minefly/minefly#readme)
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Checklist
+      description: Please make sure you've completed all the steps in the checklist
+      options:
+      - label: I am not reporting a security vulnerability (A vulnerability that, were it to be exploited, would cause damage to confidentiality, integrity, or availability.)
+        required: true
+      - label: I have read and agree to the [README](https://github.com/Minefly/minefly#readme)
+        required: true
+      - label: I have made sure this issue is not a duplicate
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      options:
+      - label: I have made sure this issue is not a duplicate
+        required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
