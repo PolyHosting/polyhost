@@ -2,11 +2,16 @@ name: Bug Report
 description: File a bug/issue
 labels: ["bug", "triage", "needs testing"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Guidelines
+        Please try to make sure that no issues of this same problem currently open
   - type: textarea
     attributes:
       label: Environment
       description: |
-         - Where did this bug occur on?
+         - Where did this bug occur on? (Discord, In-game, on the website, ...)
          - Provide information about the device the bug happened on. (If this was a website bug report you should provide the browser used, its version and your screen size)
       value: |
           - Platform: 
